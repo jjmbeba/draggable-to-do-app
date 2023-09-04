@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'light':'url("/bg.svg")',
+        'dark':'url("/bg-dark.svg")',
+        'light-lg':'url("/bg-large.svg")',
+        'dark-lg':'url("/bg-dark-large.svg")',
       },
+      boxShadow: {
+        'list': '0px 35px 50px -15px rgba(194, 195, 214, 0.50)',
+        'list-dark': '0px 35px 50px -15px rgba(0, 0, 0, 0.50)',
+      }
     },
   },
   plugins: [],
